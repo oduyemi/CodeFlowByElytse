@@ -5,7 +5,7 @@ import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import LensBlurIcon from '@mui/icons-material/LensBlur';
 import AppShortcutIcon from '@mui/icons-material/AppShortcut';
-import { Card, CardContent, Typography, IconButton, Grid, Box, Button } from '@mui/material';
+import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 interface Service {

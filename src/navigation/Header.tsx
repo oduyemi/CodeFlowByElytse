@@ -50,9 +50,9 @@ const Header: React.FC = () => {
         </div>
         <List className="px-3">
           {["Home", "Portfolio", "About", "Services", "Skills", "Contact"].map((text, index) => (
-            <ListItem button key={index} onClick={toggleMenu}>
-              <ListItemText primary={text} />
-            </ListItem>
+            <ListItem component="button" key={index} onClick={toggleMenu}>
+            <ListItemText primary={text} />
+          </ListItem>
           ))}
         </List>
       </Drawer>

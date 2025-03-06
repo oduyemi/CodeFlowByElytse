@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container, Grid, Typography, Chip, Card, CardMedia, CardContent } from "@mui/material";
 import "bootstrap/dist/css/bootstrap.min.css";
 

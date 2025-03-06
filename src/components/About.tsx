@@ -71,90 +71,92 @@ export const About: React.FC = () => {
         <Box 
           style={{
             display: "flex",
-            justifyContent: "center", // Centers the slider horizontally
+            justifyContent: "center",
             width: "100%",
           }}
         >
-          <Slider {...settings} style={{ width: "100%", position:"relative", left: "14%" }} className="mx-auto">
-            {teamMembers.map((member, index) => (
-              <Box 
-                maxWidth="xl" 
-                className="mx-auto"  
-                key={index} 
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "10px",
-                }}
-              >
+          <Box style={{ width: "100%", position: "relative", left: "14%" }}>
+            <Slider {...settings} className="mx-auto">
+              {teamMembers.map((member, index) => (
                 <Box 
+                  maxWidth="xl" 
+                  className="mx-auto"  
+                  key={index} 
                   style={{
                     display: "flex",
-                    flexDirection: "row",  // Ensures the image and text are next to each other
-                    alignItems: "center",  // Vertically aligns items to the center
-                    justifyContent: "flex-start",
+                    alignItems: "center",
+                    justifyContent: "center",
                     padding: "10px",
-                    width: "100%",
                   }}
                 >
                   <Box 
                     style={{
-                      flex: 1,
-                      paddingRight: "10px",
                       display: "flex",
-                      justifyContent: "center",
+                      flexDirection: "row",
                       alignItems: "center",
+                      justifyContent: "flex-start",
+                      padding: "10px",
+                      width: "100%",
                     }}
                   >
-                    <img
-                      src={member.image}
-                      alt={member.name}
+                    <Box 
                       style={{
-                        width: "100%",
-                        maxWidth: "400px",
-                        height: "auto",
-                        borderRadius: "50%",
-                        objectFit: "cover",
+                        flex: 1,
+                        paddingRight: "10px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
                       }}
-                    />
-                  </Box>
-
-                  <Box
-                    style={{
-                      flex: 2,  // Ensures the text content takes up the remaining space
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "flex-start",
-                    }}
-                  >
-                    <Typography variant="h4" className="gsap-reveal text-light" style={{ marginBottom: "10px" }}>
-                      {member.name}
-                    </Typography>
-                    <Typography variant="h6" className="gsap-reveal" style={{ marginBottom: "10px" }}>
-                      {member.role}
-                    </Typography>
-                    <Typography variant="body1" className="gsap-reveal" style={{ marginBottom: "10px" }}>
-                      {member.desc1}
-                    </Typography>
-                    <Typography variant="body1" className="gsap-reveal" style={{ marginBottom: "15px" }}>
-                      {member.desc2}
-                    </Typography>
-                    <Button
-                      variant="contained"
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="gsap-reveal"
-                      style={{ alignSelf: "flex-start", backgroundColor: "red" }}
                     >
-                      Connect on LinkedIn
-                    </Button>
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        style={{
+                          width: "100%",
+                          maxWidth: "400px",
+                          height: "auto",
+                          borderRadius: "50%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </Box>
+
+                    <Box
+                      style={{
+                        flex: 2,
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "flex-start",
+                      }}
+                    >
+                      <Typography variant="h4" className="gsap-reveal text-light" style={{ marginBottom: "10px" }}>
+                        {member.name}
+                      </Typography>
+                      <Typography variant="h6" className="gsap-reveal" style={{ marginBottom: "10px" }}>
+                        {member.role}
+                      </Typography>
+                      <Typography variant="body1" className="gsap-reveal" style={{ marginBottom: "10px" }}>
+                        {member.desc1}
+                      </Typography>
+                      <Typography variant="body1" className="gsap-reveal" style={{ marginBottom: "15px" }}>
+                        {member.desc2}
+                      </Typography>
+                      <Button
+                        variant="contained"
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="gsap-reveal"
+                        style={{ alignSelf: "flex-start", backgroundColor: "red" }}
+                      >
+                        Connect on LinkedIn
+                      </Button>
+                    </Box>
                   </Box>
                 </Box>
-              </Box>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </Box>
         </Box>
       </Box>
     </Box>

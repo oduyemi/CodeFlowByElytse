@@ -135,10 +135,10 @@ export const About: React.FC = () => {
                       <Typography variant="h6" className="gsap-reveal" style={{ marginBottom: "10px" }}>
                         {member.role}
                       </Typography>
-                      <Typography variant="body1" className="gsap-reveal" style={{ marginBottom: "10px" }}>
+                      <Typography variant="body1" className="gsap-reveal w-75"  style={{ marginBottom: "10px", marginRight: "10px" }}>
                         {member.desc1}
                       </Typography>
-                      <Typography variant="body1" className="gsap-reveal" style={{ marginBottom: "15px" }}>
+                      <Typography variant="body1" className="gsap-reveal w-75" style={{ marginBottom: "15px", marginRight: "10px" }}>
                         {member.desc2}
                       </Typography>
                       <Button

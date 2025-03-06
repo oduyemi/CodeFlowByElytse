@@ -9,8 +9,8 @@ export const About: React.FC = () => {
       role: "Product Manager",
       image: "/images/marilyn.jpg",
       linkedin: "https://www.linkedin.com/in/marilyn-martha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      desc1: "Marilyn has been leading the company for 10 years with great expertise.",
-      desc2: "She is passionate about creating innovative solutions for clients.",
+      desc1: "I bring a unique blend of creativity and structure. My core skill is transforming ideas into seamless, user-focused solutions. With knowledge in product development, project management, and cross-functional collaboration, I thrive in balancing vision with execution.",
+      desc2: "Beyond functionality, I believe in crafting experiences that inspire, challenge the ordinary, and spark joy. By blending strategy with spontaneity, I ensure that every product worked on, not only drives growth but also creates meaningful connections.",
     },
     {
       name: "Ibukun",
@@ -135,10 +135,10 @@ export const About: React.FC = () => {
                       <Typography variant="h6" className="gsap-reveal" style={{ marginBottom: "10px" }}>
                         {member.role}
                       </Typography>
-                      <Typography variant="body1" className="gsap-reveal w-75"  style={{ marginBottom: "10px", marginRight: "10px" }}>
+                      <Typography variant="body1" className="gsap-reveal w-75"  style={{ marginBottom: "10px" }}>
                         {member.desc1}
                       </Typography>
-                      <Typography variant="body1" className="gsap-reveal w-75" style={{ marginBottom: "15px", marginRight: "10px" }}>
+                      <Typography variant="body1" className="gsap-reveal w-75" style={{ marginBottom: "15px" }}>
                         {member.desc2}
                       </Typography>
                       <Button
